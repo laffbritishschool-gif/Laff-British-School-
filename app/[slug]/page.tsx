@@ -1,0 +1,3 @@
+import { pages } from './data';
+export function generateStaticParams(){return Object.keys(pages).map(slug=>({slug}))}
+export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const d=pages[slug];if(!d)return <main className="pageHero"><div className="container"><h1>Page not found</h1></div></main>;return <><div className="pageHero"><div className="container"><span className="eyebrow">{d.eyebrow}</span><h1>{d.title}</h1><p>{d.intro}</p></div></div><section><div className="container content">{d.sections.map(s=><div key={s.h}><h2>{s.h}</h2><p>{s.p}</p></div>)}</div></section></>}

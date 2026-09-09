@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Service(){return <main className="portal"><div className="container"><div className="panel"><span className="eyebrow">Student portal</span><h1>Student service</h1><p>This protected area is ready for the backend connection. The authenticated API will return only the signed-in student's data.</p><Link className="btn" href="/portal">Back to dashboard</Link></div></div></main>}

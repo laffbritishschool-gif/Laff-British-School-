@@ -1,0 +1,3 @@
+export const logo = process.env.NEXT_PUBLIC_SCHOOL_LOGO || 'https://i.ibb.co/whtP8S5v/image.png';
+export const school = { name:'Laff British Montessori School', short:'Laff British School', motto:'Learning today. Leading tomorrow.', colors:'Blue & Yellow', address:'School address to be supplied', phone:'School phone to be supplied', email:'School email to be supplied' };
+export const nav = [ ['About','/about'],['Academics','/academics'],['Admissions','/admissions'],['News','/news'],['Events','/events'],['Gallery','/gallery'],['Staff','/staff'],['Contact','/contact'] ];
